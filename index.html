@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="en">
+
+      <title>G.Location</title>
+
+    <!-- css framework Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+    <!-- css google maps -->
+    <link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
+    <!-- css local -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js file, has to be asyn to load html events-->
+    <script src="js/indexjs.js" async defer></script>
+    <!-- google maps key, has to be async to load map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+        async defer></script>
+
+    <!-- favicon.ico image -->
+    <!-- <link rel="shortcut icon" type="image/ico" href="./imgs/favicon.ico" /> -->
+
+  </head>
+  <body>
+
+    <main class="content">
+      <h2>Geo Location</h2>
+      <p>
+        Click Show Me button to get your coordinates.
+      </p>
+
+      <button id ='ownLocation' class="button is-primary">Show Me</button>
+       <br> <br>
+
+      <section id="map" class="container"></section>
+
+    </main>
+
+  </body>
+</html>
